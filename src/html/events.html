@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/head.html')
+
+<class="body">
+
+    @@include('blocks/page-header.html')
+
+    <main class="main">
+        <div class="events">
+            <section class="events__listing listing">
+                <h2 class="listing__section-title section-title">
+                    Мероприятия
+                </h2>
+                <div class="listing__events-card">
+
+                    <!--prettier-ignore-->
+
+                    @@loop('blocks/events-card.html', [
+
+                    {
+                    "class": "listing__events-card",
+                    "img": "assets/images/Nirvana.jpg",
+                    "alt": "Nirvana",
+                    "title": "Собираемся и слушаем альбом Nirvana",
+                    "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна.",
+                    "time": "07.12.2022 | начало 18.00",
+                    "datetime": "2022-12-07T18:00"
+                    },
+
+                    {
+                    "class": "listing__events-card",
+                    "img": "assets/images/HowStuffWorks.jpg",
+                    "alt": "HowStuffWorks",
+                    "title": "Есть тема, нужно обсудить с HowStuffWorks",
+                    "descr": "Один из самых популярных подкастов в мире. .",
+                    "time": "14.12.2022 | начало 18.30",
+                    "datetime": "2022-14-12T18:30"
+                    },
+
+                    {
+                    "class": "listing__events-card",
+                    "img": "assets/images/Sade.jpg",
+                    "alt": "Sade",
+                    "title": "Вечер | The Best of Sade",
+                    "descr": "Музыка группы имеет эклектичный характер, сочетая...",
+                    "time": "16.12.2022 | начало 20.00",
+                    "datetime": "2022-16-12T20:00"
+                    },
+
+                    {
+                    "class": "listing__events-card",
+                    "img": "assets/images/выставка Малевича.jpg",
+                    "alt": "Malevich",
+                    "title": "Выставка Малевича в Томске",
+                    "descr": "Это будет самая полная выставка с 1988 года.",
+                    "time": "23.12.2022 | начало 20.00",
+                    "datetime": "2022-23-12T20:00"
+                    },
+
+                    {
+                    "class": "listing__events-card",
+                    "img": "assets/images/арт-съемка для Tatler.jpg",
+                    "alt": "Tatler",
+                    "title": "Мастер — класс по студийной съемке от Tatler",
+                    "descr": "Фотографы издания расскажут, как...",
+                    "time": "25.12.2022 | начало 13.00",
+                    "datetime": "2022-25-12T13:00"
+                    },
+
+                    {
+                    "class": "listing__events-card",
+                    "img": "assets/images/the hatters.jpg",
+                    "alt": "TheHatters",
+                    "title": "Повесилимся на славу на концерте The Hatters",
+                    "descr": "Российская джипси-фолк-рок группа...",
+                    "time": "27.12.2022 | начало 10.00",
+                    "datetime": "2022-12-27T10:00"
+                    }
+
+                    ])
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="page-footer"></footer>
+
+    </body>
+
+</html>

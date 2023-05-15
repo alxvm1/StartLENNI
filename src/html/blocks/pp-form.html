@@ -1,0 +1,90 @@
+<div class="pp">
+
+   <div class="pp__block">
+
+      <form class="form">
+
+         <div class="form__radio radio">
+            <label class="radio__item">
+               <input class="radio__input" type="radio" name="format" value="seminar" checked>
+               <span class="radio__mark"></span>
+               <span class="radio__label">Мастер-класс/Семинар</span>
+            </label>
+         </div>
+
+         <div class="form__radio radio">
+            <label class="radio__item">
+               <input class="radio__input" type="radio" name="format" value="concert" checked>
+               <span class="radio__mark"></span>
+               <span class="radio__label">Концерт/Выступление</span>
+            </label>
+         </div>
+
+         <div class="form__radio radio">
+            <label class="radio__item">
+               <input class="radio__input" type="radio" name="format" value="pokaz" checked>
+               <span class="radio__mark"></span>
+               <span class="radio__label">Выставка/Показ</span>
+            </label>
+         </div>
+
+         <div class="form__radio radio">
+            <label class="radio__item">
+               <input class="radio__input" type="radio" name="format" value="other" checked>
+               <span class="radio__mark"></span>
+               <span class="radio__label">Другое</span>
+            </label>
+         </div>
+
+         <label class="field form__field">
+            <span class="field__title">Планируемое количество поситителей</span>
+            <select class="field__select" name="amount">
+
+               <option value="20">до 20 человек</option>
+               <option value="100">от 20 и до 100 человек</option>
+               <option value="500">от 100 и до 500 человек</option>
+               <option value="1000">более 500 человек</option>
+
+            </select>
+         </label>
+
+         <label class="field form__field">
+            <span class="field__label">Имя*</span>
+            <input class="field__input" type="text" name="name" required>
+         </label>
+
+         <label class="field form__field">
+            <span class="field__label">Фамилия*</span>
+            <input class="field__input" type="text" name="surname" required>
+         </label>
+
+         <label class="field form__field">
+            <span class="field__label">Телефон*</span>
+            <input class="field__input" type="tell" name="tell" required>
+         </label>
+
+         <label class="field form__field">
+            <span class="field__label">E-mail*</span>
+            <input class="field__input" type="email" name="email" required>
+         </label>
+
+         <label class="field form__field">
+            <span class="field__title">Есть пожелания? Напишите нам:</span>
+            <textarea class="field__textarea" name="comment"></textarea>
+         </label>
+
+         <label class="check">
+            <input type="checkbox" ; name="agree" ; class="check__input" ; required />
+
+            <span class="check__mark"></span>
+            <span class="check_label check__label--s">
+               Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
+            </span>
+         </label>
+
+         <button type="submit" class="btn">Отправить</button>
+      </form>
+
+   </div>
+
+</div>
