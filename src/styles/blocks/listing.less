@@ -1,4 +1,5 @@
 .listing {
+
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -8,9 +9,30 @@
     padding-left: 40px;
     padding-right: 40px;
 
-    &__events-card {
+    &__events-list {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin: 0 -30px -120px;
+    }
+
+    &__events-card {
+        width: calc(33.3333% - 60px);
+        margin: 0 30px 120px;
+    }
+
+    &__btn-hide {
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .listing__btn-hide:hover {
+        cursor: pointer;
+    }
+
+    .listing__btn-hide:hover .listing__btn-icon {
+        color: @red;
     }
 }

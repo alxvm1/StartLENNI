@@ -9,11 +9,69 @@
 
    <main class="main"></main>
 
+   <div class="logo">
+      @@include('blocks/main-logo.html')
+   </div>
+
+   <div class="main-events">
+
+      <h2 class="main-events__title">
+         Мероприятия
+      </h2>
+
+      <div class="main-events__listing">
+
+         <!--prettier-ignore-->
+
+         @@loop('blocks/events-card.html', [
+
+         {
+         "class": "main-events__card",
+         "img": "assets/images/Nirvana.jpg",
+         "alt": "Nirvana",
+         "title": "Собираемся и слушаем альбом Nirvana",
+         "descr": "Это третий альбом группы, выпущенный после смерти Курта Кобейна.",
+         "time": "07.12.2022 | начало 18.00",
+         "datetime": "2022-12-07T18:00"
+         },
+
+         {
+         "class": "main-events__card",
+         "img": "assets/images/HowStuffWorks.jpg",
+         "alt": "HowStuffWorks",
+         "title": "Есть тема, нужно обсудить с HowStuffWorks",
+         "descr": "Один из самых популярных подкастов в мире. .",
+         "time": "14.12.2022 | начало 18.30",
+         "datetime": "2022-14-12T18:30"
+         },
+
+         {
+         "class": "main-events__card",
+         "img": "assets/images/Sade.jpg",
+         "alt": "Sade",
+         "title": "Вечер | The Best of Sade",
+         "descr": "Музыка группы имеет эклектичный характер, сочетая...",
+         "time": "16.12.2022 | начало 20.00",
+         "datetime": "2022-16-12T20:00"
+         }
+
+         ])
+      </div>
+   </div>
+
    <div class="home">
       @@include('blocks/blog-listing.html', {"class": "home__listing"})
    </div>
 
-   <footer class="page-footer"></footer>
+   <div class="contacts">
+      @@include('blocks/main-contacts.html')
+   </div>
+
+
+
+   <footer class="page-footer">
+      @@include('blocks/page-footer.html')
+   </footer>
 
    @@include('blocks/pp-form.html')
 
