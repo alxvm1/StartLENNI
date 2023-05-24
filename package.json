@@ -2,7 +2,7 @@
     "name": "startlenni",
     "version": "1.0.6",
     "description": "course frontend junior 2023",
-    "author": "stepashkin.nik@mail.ru",
+    "author": "alxvm1@mail.ru",
     "devDependencies": {
         "autoprefixer": "^10.4.2",
         "browser-sync": "^2.27.7",
