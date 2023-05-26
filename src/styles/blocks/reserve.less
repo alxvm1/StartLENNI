@@ -1,15 +1,17 @@
 .reserve {
    display: grid;
    width: 100%;
+   max-width: 1334px;
    gap: 67px 150px;
+   margin: 0 auto;
+   margin-bottom: 100px;
    grid-template-columns: 405px calc(89% - 405px);
    grid-template-areas:
-      "checkbox scheme"
+      "checks scheme"
       "order legend";
 
-   &__checkbox {
-      grid-area: checkbox;
-
+   &__checks {
+      grid-area: checks;
    }
 
    &__scheme {
@@ -22,21 +24,66 @@
 
    }
 
+   &__order-btn {
+      margin-top: 50px;
+      padding: 15px 40px;
+      border: 1px solid @red;
+      background-color: @red;
+      outline: none;
+      color: @white;
+      width: 405px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      text-decoration: none;
+      transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover {
+         background-color: @red_hover;
+      }
+   }
+
+
    &__legend {
       grid-area: legend;
-
+      justify-self: end;
    }
+
+   &__legend-article {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      justify-content: flex-end;
+   }
+
+   &__legend-text {
+      margin-left: 10px;
+   }
+
+   &__legend-title {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+      margin-top: 40px;
+   }
+
+   &__order-title {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      margin-top: 40px;
+   }
+
 
    &__scheme-wrapper {
       position: relative;
       width: 100%;
 
-      &::after {
-         content: "";
-         display: block;
-         width: 100%;
-         padding-top: 51.15384%;
-      }
    }
 
    &__scene {
@@ -54,12 +101,24 @@
    }
 
    &__qty {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+
       &::after {
          content: " " attr(data-caption) " | " attr(data-price);
       }
    }
 
    &__sum {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+
       &::after {
          content: attr(data-currency);
          margin-left: 4px;
@@ -68,6 +127,15 @@
    }
 
    &__total {
+      display: flex;
+      justify-content: center;
+      margin-top: 26px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+
       &::before {
          content: attr(data-caption);
          margin-right: 30px;
@@ -78,6 +146,45 @@
          margin-left: 4px;
          font-size: 0.95em;
       }
+   }
+
+   &__checks {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__check {
+      margin: 10px 0 10px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 22px;
+
+      &--red {
+         color: @red;
+
+         .check__mark {
+            border-color: @red;
+         }
+
+         .check__input {
+            &:checked {
+               &~.check__mark {
+                  background-color: @red;
+               }
+            }
+         }
+      }
+
+      &--disabled {
+         pointer-events: none;
+         opacity: 0.5;
+      }
+   }
+
+   &__scheme-title {
+      .section-title
    }
 
 }

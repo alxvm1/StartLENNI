@@ -28,10 +28,15 @@
           <a href="#" class="page-header__nav-link">Контакты</a>
         </nav>
         <div class="page-header__right-block">
-          <a href="#" class="page-header__btn btn">
-            Войти
-          </a>
-        </div>
+          <a href="#" class="page-header__user-btn">Войти </a>
+
+          <button type="button" class="page-header__nav-toggle"></button>
+
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+      </a>
+    </div>
 
     </div>
   </header>
@@ -289,12 +294,23 @@
 
 
   <footer class="page-footer">
+    <div class="page-footer__lines">
+      <div class="page-footer__split">
+        <picture>
+          <img src="assets/images/left-line.jpg" alt="line">
+        </picture>
+        <picture>
+          <img src="assets/images/right-line.jpg" alt="line">
+        </picture>
+      </div>
+    </div>
+
     <div class="page-footer__nav">
 
       <div class="page-footer__btns">
 
         <svg class="page-footer__red-line" width="4" height="198">
-          <use xlink:href="assets/icons/symbols.svg#red_rect"></use>
+          <use xlink:href="assets/icons/symbols.svg#red_line"></use>
         </svg>
 
         <div class="page-footer__btns-nav">

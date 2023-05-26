@@ -3,7 +3,9 @@
    flex-direction: column;
    margin-bottom: 100px;
 
+
    &__nav {
+      flex-wrap: wrap;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -12,7 +14,7 @@
    &__btns {
       display: flex;
       flex-direction: row;
-      padding-right: 35px;
+      padding-left: 60px;
    }
 
    &__btns-nav {
@@ -25,8 +27,8 @@
    &__about {
       display: flex;
       flex-direction: row;
-      padding-left: 305px;
-      padding-top: 100px;
+      justify-content: center;
+      margin-top: 100px;
    }
 
    &__sub {
@@ -54,19 +56,21 @@
       outline: none;
       width: 135px;
       height: 55px;
+      border-radius: 0 5px 5px 0;
       color: @white;
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 19px;
+      width: 240px;
       text-align: center;
       text-decoration: none;
       transition: color 0.2s, background-color 0.2s, border-color 0.2s;
       overflow: hidden;
 
       &:hover {
-         color: @grey;
+         background-color: @red_hover;
       }
    }
 
@@ -97,7 +101,7 @@
    }
 
    &__social {
-      margin-right: 300px;
+      margin-right: 280px;
    }
 
    &__nav-link {
@@ -119,5 +123,18 @@
 
    &__tagree {
       padding-top: 30px;
+   }
+
+   &__split {
+      width: 1334px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+   }
+
+   &__lines {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
    }
 }

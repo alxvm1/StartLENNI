@@ -28,15 +28,21 @@
           <a href="#" class="page-header__nav-link">Контакты</a>
         </nav>
         <div class="page-header__right-block">
-          <a href="#" class="page-header__btn btn">
-            Войти
-          </a>
-        </div>
+          <a href="#" class="page-header__user-btn">Войти </a>
+
+          <button type="button" class="page-header__nav-toggle"></button>
+
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+      </a>
+    </div>
 
     </div>
   </header>
 
   <main class="main">
+
     <div class="events">
       <section class="listing events__listing">
 
@@ -241,11 +247,155 @@
           </table>
         </div>
 
+        <div class="main-logo__choice">
+          <h3 class="main-logo__btn-label">Я ХОЧУ:</h3>
+
+          <div class="main-logo__btns">
+            <button class="main-logo__red-btn">Провести мероприятие</button>
+            <button class="main-logo__white-btn">Стать арендатором</button>
+          </div>
+        </div>
+
+        <div class="events__info">
+          <div class="events__info-article">
+
+            <svg class="events__icon" width="110" height="110">
+              <use xlink:href="assets/icons/symbols.svg#location"></use>
+            </svg>
+
+            <div class="events__info-text">
+              <h3 class="events__info-title">Цены</h3>
+              <div class="events__info-decsr">Цены, указанные на сайте носят
+                <br> информационный характер.
+                Мы
+                придерживаемся
+                <br> индивидуального подхода в работе с клиентом.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="events__info-article">
+
+            <svg class="events__icon" width="110" height="110">
+              <use xlink:href="assets/icons/symbols.svg#location"></use>
+            </svg>
+
+            <div class="events__info-text">
+              <h3 class="events__info-title">Контакты</h3>
+              <div class="events__info-decsr">Отдел организации мероприятий
+                <br>
+                +7 499 350 0730
+                <br>
+                hi@tagree.ru
+              </div>
+            </div>
+
+          </div>
+
+          <div class="events__info-article">
+
+            <svg class="events__icon" width="110" height="110">
+              <use class="events__icon-svg" xlink:href="assets/icons/symbols.svg#location"></use>
+            </svg>
+
+            <div class="events__info-text">
+              <h3 class="events__info-title">Преимущество</h3>
+              <div class="events__info-decsr">Мы имеем все возможности для того, чтобы
+                <br> помочь как
+                малому бизнесу и молодым талантам,
+                <br> так и большим корпорациям и холдингам.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
     </div>
   </main>
 
-  <footer class="page-footer"></footer>
+  <footer class="page-footer">
+    <div class="page-footer__lines">
+      <div class="page-footer__split">
+        <picture>
+          <img src="assets/images/left-line.jpg" alt="line">
+        </picture>
+        <picture>
+          <img src="assets/images/right-line.jpg" alt="line">
+        </picture>
+      </div>
+    </div>
+
+    <div class="page-footer__nav">
+
+      <div class="page-footer__btns">
+
+        <svg class="page-footer__red-line" width="4" height="198">
+          <use xlink:href="assets/icons/symbols.svg#red_line"></use>
+        </svg>
+
+        <div class="page-footer__btns-nav">
+          <a href="#" class="page-footer__nav-link">Календарь мероприятий</a>
+          <a href="#" class="page-footer__nav-link">Провести мероприятие</a>
+          <a href="#" class="page-footer__nav-link">Стать арендатором</a>
+          <a href="#" class="page-footer__nav-link">Наши проекты</a>
+          <a href="#" class="page-footer__nav-link">Контакты</a>
+        </div>
+      </div>
+
+      <div class="page-footer__sub">
+
+        <div class="page-footer__sub-label">Подпишись и будь в курсе происходящего</div>
+
+        <div class="page-footer__sub-panel">
+
+          <label class="field form__field form__field">
+            <input class="field__input" type="text" placeholder="Email" name="email" />
+          </label>
+
+          <button type="submit" class="page-footer__sub-btn">
+            Подписаться
+          </button>
+
+        </div>
+
+        <div class="page-footer__sub-checkbox">
+          <div class="form__check-list">
+            <label class="form__check check">
+              <input type="checkbox" name="agree" class="check__input" checked />
+              <span class="check__mark"></span>
+              <span class="check__label check__label--s">
+                Согласен на обработку персональных данных
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="page-footer__about">
+
+      <div class="page-footer__about-copyright">© Millennials 2022
+        <div class="page-footer__about-nav">
+          <a href="#" class="page-footer__about-link">Политика конфиденциальности</a>
+          <a href="#" class="page-footer__about-link">Cookies</a>
+        </div>
+      </div>
+
+      <svg class="page-footer__social" width="160" height="58">
+        <use xlink:href="assets/icons/symbols.svg#social"></use>
+      </svg>
+
+      <picture class="page-footer__tagree" width="160" height="58">
+        <img src="assets/images/tagree.png" alt="tagree">
+      </picture>
+
+    </div>
+  </footer>
+
 
   </body>
 
