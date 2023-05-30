@@ -51,12 +51,24 @@
    pointer-events: none !important;
 }
 
+.show-nav {
+   body {
+      @media @bw1020 {
+         overflow: hidden;
+      }
+   }
+}
+
 .show-event-popup {
    body {
       overflow: hidden;
    }
 
-   #formPP {
+   #js-eventPP {
+      display: flex;
+   }
+
+   #eventPP {
       display: flex;
    }
 }

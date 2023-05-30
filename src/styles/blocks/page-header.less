@@ -108,7 +108,7 @@
          padding: 211px 30px 30px;
          background-color: fade(@grey, 98%);
          transition: transform 0.4s;
-         transform: translateX(-100%);
+         transform: translateX(0);
          overflow-x: hidden;
          overflow-y: auto;
 
@@ -268,15 +268,19 @@
          height: 2px;
          border-radius: 2px;
          background-color: @black;
+         transform-origin: 50% 50%;
+         transition: transform 0.4s, box-shadow 0.4s;
       }
 
       &::before {
          top: 13px;
-         box-shadow: 0 6px 0 @black;
+         transform: translate(0px, 6px) rotate(45deg);
+         box-shadow: none;
       }
 
       &::after {
          top: 25px;
+         transform: translate(0px, -6px) rotate(-45deg);
       }
    }
 }

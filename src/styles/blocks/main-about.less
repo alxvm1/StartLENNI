@@ -1,0 +1,122 @@
+.main-about {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   max-width: 1334px;
+   margin: 0 auto 0;
+
+   &__title {}
+
+   &__text {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 100px;
+   }
+
+   &__text-title {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 60px;
+   }
+
+   &__text-descr {
+      display: flex;
+      justify-content: flex-end;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+   }
+
+   &__picture {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 100px;
+   }
+
+   &__img {
+      margin-right: 60px;
+   }
+
+   &__right-img {
+      position: absolute;
+      padding-top: 250px;
+      right: 0;
+   }
+
+   &__bottom {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 100px;
+   }
+
+   &__bottom-picture {
+      display: flex;
+      flex-shrink: 0;
+   }
+
+   &__bottom-img {
+      padding-top: 19px;
+      padding-left: 49px;
+   }
+
+   &__bottom-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-left: 70px;
+      padding-bottom: 60px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+   }
+
+   &__bottom-btn {
+      display: flex;
+      flex-direction: row;
+      padding-top: 90px;
+      width: 344px;
+   }
+
+   &__bottom-btn-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+
+      &:hover {
+         color: @red_hover;
+         text-decoration-color: @red_hover;
+      }
+   }
+
+   &__bottom-btn-arrow {
+      margin: auto 0 auto auto;
+      color: inherit;
+      color: @black;
+      transition: color 0.2s;
+      cursor: pointer;
+
+      &:hover {
+         color: @red_hover;
+         text-decoration-color: @red_hover;
+      }
+   }
+
+   &__rect {
+      position: absolute;
+      z-index: -1;
+   }
+}
